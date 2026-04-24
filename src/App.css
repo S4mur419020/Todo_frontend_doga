@@ -1,38 +1,94 @@
-.App {
+.container {
+  padding-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kartya-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  border: none !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  background-color: #fff;
+  flex: 0 1 350px;
+  min-width: 300px;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 1.8rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-group {
+  background-color: #e9ecef !important;
+  border-radius: 10px !important;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.input-group input {
+  border: none !important;
+  background: transparent !important;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.input-group button {
+  border: none !important;
+  background: transparent !important;
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.todo-sor {
+  border: none !important;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bg-light {
+  background-color: #f1f3f5 !important;
+}
+
+.bg-success {
+  background-color: #a3f5a3 !important;
+  color: #2b5e2b !important;
+}
+
+.kesz-szoveg {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@media (max-width:768px) {
+  .container h1 {
+    font-size: 1.8rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .kartya-container {
+    padding: 10px;
+    gap: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
   }
 }
